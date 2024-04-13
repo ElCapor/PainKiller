@@ -1,0 +1,11 @@
+[
+{
+  "directory": "c:\\Users\\Clean\\Desktop\\Sandboxia\\PainKiller",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/std:c++20", "/Isrc", "/EHsc", "/IC:\\Users\\Clean\\AppData\\Local\\.xmake\\packages\\l\\lua\\v5.4.6\\f7a1b6e07e99413691d173f686cd85cb\\include\\lua", "/Fobuild\\.objs\\PainKiller\\windows\\x64\\release\\src\\LuaVM\\LuaVM.cpp.obj", "src\\LuaVM\\LuaVM.cpp", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\cppwinrt", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\shared", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\ucrt", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\um", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\winrt", "-imsvc", "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\include"],
+  "file": "src\\LuaVM\\LuaVM.cpp"
+},
+{
+  "directory": "c:\\Users\\Clean\\Desktop\\Sandboxia\\PainKiller",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/std:c++20", "/Isrc", "/EHsc", "/IC:\\Users\\Clean\\AppData\\Local\\.xmake\\packages\\l\\lua\\v5.4.6\\f7a1b6e07e99413691d173f686cd85cb\\include\\lua", "/Fobuild\\.objs\\PainKiller\\windows\\x64\\release\\src\\main.cpp.obj", "src\\main.cpp", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\cppwinrt", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\shared", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\ucrt", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\um", "-imsvc", "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22000.0\\winrt", "-imsvc", "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\include"],
+  "file": "src\\main.cpp"
+}]

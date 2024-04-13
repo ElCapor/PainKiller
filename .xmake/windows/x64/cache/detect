@@ -1,0 +1,47 @@
+{
+    find_package_windows_x64_fetch_package_xmake = {
+        ["xmake::lua_f7a1b6e07e99413691d173f686cd85cb_release_v5.4.6_external"] = {
+            version = "v5.4.6",
+            links = {
+                "lua"
+            },
+            linkdirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\lib]]
+            },
+            libfiles = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\lib\lua.lib]]
+            },
+            static = true,
+            sysincludedirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\include\lua]]
+            }
+        }
+    },
+    find_programver = {
+        ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe"] = "19.36.32532"
+    },
+    find_program_msvc_arch_x64_plat_windows_checktoolcxx = {
+        ["cl.exe"] = [[C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64\cl.exe]]
+    },
+    find_program_msvc_arch_x64_plat_windows_checktoolld = {
+        ["link.exe"] = [[C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64\link.exe]]
+    },
+    find_program = {
+        unzip = false,
+        ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe"] = [[C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64\cl.exe]],
+        zig = false,
+        ["cl.exe"] = [[C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64\cl.exe]],
+        ["7z"] = [[C:\Program Files\xmake\winenv\bin\7z]],
+        gzip = false,
+        git = "git",
+        nim = false
+    },
+    ["lib.detect.has_flags"] = {
+        ["windows_x64_C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe_19.36.32532_cxx_cxflags_-nologo_cl_sourceDependencies"] = true,
+        ["windows_x64_C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe_19.36.32532_cxx_cxflags_-nologo_cl_external_includedir"] = true,
+        ["windows_x64_C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe_19.36.32532_cxx_cxflags_-nologo_-std:c++20"] = true
+    },
+    find_program_msvc_arch_x64_plat_windows_checktoolcc = {
+        ["cl.exe"] = [[C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64\cl.exe]]
+    }
+}

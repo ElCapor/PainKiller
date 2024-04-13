@@ -1,0 +1,19 @@
+{
+    lua = {
+        version = "v5.4.6",
+        envs = {
+            PATH = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\bin]]
+            }
+        },
+        static = true,
+        sysincludedirs = [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\include\lua]],
+        installdir = [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb]],
+        __enabled = true,
+        linkdirs = [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\lib]],
+        libfiles = [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\lib\lua.lib]],
+        __requirestr = "lua",
+        links = "lua"
+    }
+}
