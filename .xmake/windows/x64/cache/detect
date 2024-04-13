@@ -1,24 +1,305 @@
 {
+    find_program_fetch_package_xmake = {
+        cmake = false,
+        pkgconf = false
+    },
+    ["lib.detect.has_flags"] = {
+        ["windows_x64_C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe_19.36.32532_cxx_cxflags_-nologo_-std:c++20"] = true,
+        ["windows_x64_C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe_19.36.32532_cxx_cxflags_-nologo_cl_external_includedir"] = true,
+        ["windows_x64_C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe_19.36.32532_cxx_cxflags_-nologo_cl_sourceDependencies"] = true,
+        ["windows_x64_C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe_19.36.32532_cxx_cxflags_-nologo_-FS -Fd"] = true
+    },
+    find_programver_fetch_package_system = {
+        ["C:\\Program Files\\CMake\\bin\\cmake"] = "3.29.0"
+    },
+    find_program_fetch_package_system = {
+        cmake = [[C:\Program Files\CMake\bin\cmake]]
+    },
     find_package_windows_x64_fetch_package_xmake = {
+        ["xmake::imgui_a6aed58394e045f29a5fc1549ef92c74_release_v1.80_external"] = {
+            license = "MIT",
+            links = {
+                "imgui"
+            },
+            static = true,
+            version = "v1.80",
+            syslinks = "imm32",
+            sysincludedirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui\v1.80\a6aed58394e045f29a5fc1549ef92c74\include]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui\v1.80\a6aed58394e045f29a5fc1549ef92c74\include\imgui]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui\v1.80\a6aed58394e045f29a5fc1549ef92c74\include\backends]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui\v1.80\a6aed58394e045f29a5fc1549ef92c74\include\misc\cpp]]
+            },
+            libfiles = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui\v1.80\a6aed58394e045f29a5fc1549ef92c74\lib\imgui.lib]]
+            },
+            linkdirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui\v1.80\a6aed58394e045f29a5fc1549ef92c74\lib]]
+            }
+        },
         ["xmake::lua_f7a1b6e07e99413691d173f686cd85cb_release_v5.4.6_external"] = {
-            version = "v5.4.6",
             links = {
                 "lua"
+            },
+            version = "v5.4.6",
+            static = true,
+            sysincludedirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\include\lua]]
             },
             linkdirs = {
                 [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\lib]]
             },
             libfiles = {
                 [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\lib\lua.lib]]
+            }
+        },
+        ["xmake::libflac_be09e6d64f7a4358bdd2f822674ae8b0_release_1.4.3_external"] = {
+            license = "BSD",
+            links = {
+                "FLAC"
             },
+            defines = "FLAC__NO_DLL",
+            version = "1.4.3",
             static = true,
             sysincludedirs = {
-                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\include\lua]]
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libflac\1.4.3\be09e6d64f7a4358bdd2f822674ae8b0\include]]
+            },
+            libfiles = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libflac\1.4.3\be09e6d64f7a4358bdd2f822674ae8b0\lib\FLAC.lib]]
+            },
+            linkdirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libflac\1.4.3\be09e6d64f7a4358bdd2f822674ae8b0\lib]]
+            }
+        },
+        ["xmake::sfml_c464057346eb4c489f0bb90afe098f74_release_2.6.0_external"] = {
+            links = {
+                "sfml-graphics-s",
+                "sfml-window-s",
+                "sfml-audio-s",
+                "sfml-network-s",
+                "sfml-system-s",
+                "sfml-main"
+            },
+            sysincludedirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\include]]
+            },
+            linkdirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib]]
+            },
+            components = {
+                audio = {
+                    links = {
+                        "sfml-audio-s",
+                        "openal32",
+                        "flac",
+                        "vorbisenc",
+                        "vorbisfile",
+                        "vorbis",
+                        "ogg"
+                    }
+                },
+                network = {
+                    syslinks = "ws2_32",
+                    links = "sfml-network-s"
+                },
+                window = {
+                    syslinks = {
+                        "opengl32",
+                        "gdi32",
+                        "advapi32",
+                        "user32"
+                    },
+                    links = "sfml-window-s"
+                },
+                system = {
+                    syslinks = {
+                        "winmm",
+                        "winmm"
+                    },
+                    links = "sfml-system-s"
+                },
+                main = {
+                    links = "sfml-main"
+                },
+                graphics = {
+                    links = "sfml-graphics-s"
+                },
+                __base = {
+                    links = {
+                        "freetype",
+                        "zlib",
+                        "FLAC",
+                        "vorbisenc",
+                        "vorbisfile",
+                        "vorbis",
+                        "ogg",
+                        "OpenAL32"
+                    },
+                    syslinks = {
+                        "ole32",
+                        "shell32",
+                        "user32",
+                        "winmm",
+                        "kernel32"
+                    },
+                    sysincludedirs = {
+                        [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\include]],
+                        [[C:\Users\Clean\AppData\Local\.xmake\packages\f\freetype\2.13.1\3c035c48b39a4f20b08f13a452278f99\include\freetype2]],
+                        [[C:\Users\Clean\AppData\Local\.xmake\packages\z\zlib\v1.3.1\d676b73b676c41cdae37b37fbf6c9cbd\include]],
+                        [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libflac\1.4.3\be09e6d64f7a4358bdd2f822674ae8b0\include]],
+                        [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\include]],
+                        [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libogg\v1.3.4\ebbae9da0a6f4e9196c4c23e78abd71f\include]],
+                        [[C:\Users\Clean\AppData\Local\.xmake\packages\o\openal-soft\1.23.1\9307f76021bb47a38f8031ec49a9fb02\include]]
+                    },
+                    linkdirs = {
+                        [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib]],
+                        [[C:\Users\Clean\AppData\Local\.xmake\packages\f\freetype\2.13.1\3c035c48b39a4f20b08f13a452278f99\lib]],
+                        [[C:\Users\Clean\AppData\Local\.xmake\packages\z\zlib\v1.3.1\d676b73b676c41cdae37b37fbf6c9cbd\lib]],
+                        [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libflac\1.4.3\be09e6d64f7a4358bdd2f822674ae8b0\lib]],
+                        [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\lib]],
+                        [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libogg\v1.3.4\ebbae9da0a6f4e9196c4c23e78abd71f\lib]],
+                        [[C:\Users\Clean\AppData\Local\.xmake\packages\o\openal-soft\1.23.1\9307f76021bb47a38f8031ec49a9fb02\lib]]
+                    },
+                    defines = {
+                        "SFML_STATIC",
+                        "FLAC__NO_DLL",
+                        "AL_LIBTYPE_STATIC"
+                    }
+                }
+            },
+            license = "zlib",
+            version = "2.6.0",
+            static = true,
+            syslinks = {
+                "opengl32",
+                "gdi32",
+                "advapi32",
+                "user32",
+                "ws2_32",
+                "winmm"
+            },
+            defines = "SFML_STATIC",
+            libfiles = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-graphics-s.lib]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-window-s.lib]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-audio-s.lib]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-network-s.lib]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-system-s.lib]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-main.lib]]
+            }
+        },
+        ["xmake::openal-soft_9307f76021bb47a38f8031ec49a9fb02_release_1.23.1_external"] = {
+            links = {
+                "OpenAL32"
+            },
+            sysincludedirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\o\openal-soft\1.23.1\9307f76021bb47a38f8031ec49a9fb02\include]]
+            },
+            linkdirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\o\openal-soft\1.23.1\9307f76021bb47a38f8031ec49a9fb02\lib]]
+            },
+            license = "LGPL-2.0",
+            version = "1.23.1",
+            syslinks = {
+                "ole32",
+                "shell32",
+                "user32",
+                "winmm",
+                "kernel32"
+            },
+            static = true,
+            libfiles = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\o\openal-soft\1.23.1\9307f76021bb47a38f8031ec49a9fb02\lib\OpenAL32.lib]]
+            },
+            defines = "AL_LIBTYPE_STATIC"
+        },
+        ["xmake::libogg_ebbae9da0a6f4e9196c4c23e78abd71f_release_v1.3.4_external"] = {
+            links = {
+                "ogg"
+            },
+            version = "v1.3.4",
+            static = true,
+            sysincludedirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libogg\v1.3.4\ebbae9da0a6f4e9196c4c23e78abd71f\include]]
+            },
+            linkdirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libogg\v1.3.4\ebbae9da0a6f4e9196c4c23e78abd71f\lib]]
+            },
+            libfiles = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libogg\v1.3.4\ebbae9da0a6f4e9196c4c23e78abd71f\lib\ogg.lib]]
+            }
+        },
+        ["xmake::freetype_3c035c48b39a4f20b08f13a452278f99_release_2.13.1_external"] = {
+            license = "BSD",
+            links = {
+                "freetype"
+            },
+            version = "2.13.1",
+            static = true,
+            sysincludedirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\f\freetype\2.13.1\3c035c48b39a4f20b08f13a452278f99\include\freetype2]]
+            },
+            linkdirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\f\freetype\2.13.1\3c035c48b39a4f20b08f13a452278f99\lib]]
+            },
+            libfiles = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\f\freetype\2.13.1\3c035c48b39a4f20b08f13a452278f99\lib\freetype.lib]]
+            }
+        },
+        ["xmake::libvorbis_8a3f7ff1f8c04961a51fa660cbc0c9ab_release_1.3.7_external"] = {
+            license = "BSD-3",
+            links = {
+                "vorbisenc",
+                "vorbisfile",
+                "vorbis"
+            },
+            version = "1.3.7",
+            static = true,
+            sysincludedirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\include]]
+            },
+            linkdirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\lib]]
+            },
+            libfiles = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\lib\vorbisenc.lib]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\lib\vorbisfile.lib]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\lib\vorbis.lib]]
+            }
+        },
+        ["xmake::imgui-sfml_dedace1f497b40d2b01c3bb13aaac9d0_release_v2.5_external"] = {
+            links = {
+                "ImGui-SFML"
+            },
+            static = true,
+            version = "v2.5",
+            syslinks = "imm32",
+            sysincludedirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui-sfml\v2.5\dedace1f497b40d2b01c3bb13aaac9d0\include]]
+            },
+            libfiles = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui-sfml\v2.5\dedace1f497b40d2b01c3bb13aaac9d0\lib\ImGui-SFML.lib]]
+            },
+            linkdirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui-sfml\v2.5\dedace1f497b40d2b01c3bb13aaac9d0\lib]]
+            }
+        },
+        ["xmake::zlib_d676b73b676c41cdae37b37fbf6c9cbd_release_v1.3.1_external"] = {
+            links = {
+                "zlib"
+            },
+            version = "v1.3.1",
+            static = true,
+            sysincludedirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\z\zlib\v1.3.1\d676b73b676c41cdae37b37fbf6c9cbd\include]]
+            },
+            linkdirs = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\z\zlib\v1.3.1\d676b73b676c41cdae37b37fbf6c9cbd\lib]]
+            },
+            libfiles = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\z\zlib\v1.3.1\d676b73b676c41cdae37b37fbf6c9cbd\lib\zlib.lib]]
             }
         }
-    },
-    find_programver = {
-        ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe"] = "19.36.32532"
     },
     find_program_msvc_arch_x64_plat_windows_checktoolcxx = {
         ["cl.exe"] = [[C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64\cl.exe]]
@@ -26,22 +307,20 @@
     find_program_msvc_arch_x64_plat_windows_checktoolld = {
         ["link.exe"] = [[C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64\link.exe]]
     },
-    find_program = {
-        unzip = false,
-        ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe"] = [[C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64\cl.exe]],
-        zig = false,
-        ["cl.exe"] = [[C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64\cl.exe]],
-        ["7z"] = [[C:\Program Files\xmake\winenv\bin\7z]],
-        gzip = false,
-        git = "git",
-        nim = false
-    },
-    ["lib.detect.has_flags"] = {
-        ["windows_x64_C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe_19.36.32532_cxx_cxflags_-nologo_cl_sourceDependencies"] = true,
-        ["windows_x64_C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe_19.36.32532_cxx_cxflags_-nologo_cl_external_includedir"] = true,
-        ["windows_x64_C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe_19.36.32532_cxx_cxflags_-nologo_-std:c++20"] = true
-    },
     find_program_msvc_arch_x64_plat_windows_checktoolcc = {
         ["cl.exe"] = [[C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64\cl.exe]]
+    },
+    find_program = {
+        ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe"] = [[C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64\cl.exe]],
+        zig = false,
+        git = "git",
+        nim = false,
+        ["cl.exe"] = [[C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.36.32532\bin\HostX64\x64\cl.exe]],
+        unzip = false,
+        ["7z"] = [[C:\Program Files\xmake\winenv\bin\7z]],
+        gzip = false
+    },
+    find_programver = {
+        ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe"] = "19.36.32532"
     }
 }

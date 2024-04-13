@@ -1,19 +1,307 @@
 {
+    sfml = {
+        __components_deps = {
+            audio = "system",
+            system = "main",
+            network = "system",
+            window = "system",
+            graphics = {
+                "window",
+                "system"
+            }
+        },
+        defines = {
+            "SFML_STATIC",
+            "FLAC__NO_DLL",
+            "AL_LIBTYPE_STATIC"
+        },
+        __requirestr = "sfml",
+        components = {
+            audio = {
+                links = {
+                    "sfml-audio-s",
+                    "openal32",
+                    "flac",
+                    "vorbisenc",
+                    "vorbisfile",
+                    "vorbis",
+                    "ogg"
+                }
+            },
+            system = {
+                links = "sfml-system-s",
+                syslinks = {
+                    "winmm",
+                    "winmm"
+                }
+            },
+            __base = {
+                linkdirs = {
+                    [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib]],
+                    [[C:\Users\Clean\AppData\Local\.xmake\packages\f\freetype\2.13.1\3c035c48b39a4f20b08f13a452278f99\lib]],
+                    [[C:\Users\Clean\AppData\Local\.xmake\packages\z\zlib\v1.3.1\d676b73b676c41cdae37b37fbf6c9cbd\lib]],
+                    [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libflac\1.4.3\be09e6d64f7a4358bdd2f822674ae8b0\lib]],
+                    [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\lib]],
+                    [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libogg\v1.3.4\ebbae9da0a6f4e9196c4c23e78abd71f\lib]],
+                    [[C:\Users\Clean\AppData\Local\.xmake\packages\o\openal-soft\1.23.1\9307f76021bb47a38f8031ec49a9fb02\lib]]
+                },
+                links = {
+                    "freetype",
+                    "zlib",
+                    "FLAC",
+                    "vorbisenc",
+                    "vorbisfile",
+                    "vorbis",
+                    "ogg",
+                    "OpenAL32"
+                },
+                sysincludedirs = {
+                    [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\include]],
+                    [[C:\Users\Clean\AppData\Local\.xmake\packages\f\freetype\2.13.1\3c035c48b39a4f20b08f13a452278f99\include\freetype2]],
+                    [[C:\Users\Clean\AppData\Local\.xmake\packages\z\zlib\v1.3.1\d676b73b676c41cdae37b37fbf6c9cbd\include]],
+                    [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libflac\1.4.3\be09e6d64f7a4358bdd2f822674ae8b0\include]],
+                    [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\include]],
+                    [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libogg\v1.3.4\ebbae9da0a6f4e9196c4c23e78abd71f\include]],
+                    [[C:\Users\Clean\AppData\Local\.xmake\packages\o\openal-soft\1.23.1\9307f76021bb47a38f8031ec49a9fb02\include]]
+                },
+                syslinks = {
+                    "ole32",
+                    "shell32",
+                    "user32",
+                    "winmm",
+                    "kernel32"
+                },
+                defines = {
+                    "SFML_STATIC",
+                    "FLAC__NO_DLL",
+                    "AL_LIBTYPE_STATIC"
+                }
+            },
+            main = {
+                links = "sfml-main"
+            },
+            network = {
+                links = "sfml-network-s",
+                syslinks = "ws2_32"
+            },
+            window = {
+                links = "sfml-window-s",
+                syslinks = {
+                    "opengl32",
+                    "gdi32",
+                    "advapi32",
+                    "user32"
+                }
+            },
+            graphics = {
+                links = "sfml-graphics-s"
+            }
+        },
+        envs = {
+            PATH = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\c\cmake\3.28.3\1f4b73d574724faaad4b9db019f6e0e8\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\p\pkgconf\2.0.3\be5c11cb1b754512913eca4b14a1fb60\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\z\zlib\v1.3.1\d676b73b676c41cdae37b37fbf6c9cbd\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\f\freetype\2.13.1\3c035c48b39a4f20b08f13a452278f99\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libogg\v1.3.4\ebbae9da0a6f4e9196c4c23e78abd71f\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libflac\1.4.3\be09e6d64f7a4358bdd2f822674ae8b0\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\o\openal-soft\1.23.1\9307f76021bb47a38f8031ec49a9fb02\bin]]
+            }
+        },
+        sysincludedirs = {
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\include]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\f\freetype\2.13.1\3c035c48b39a4f20b08f13a452278f99\include\freetype2]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\z\zlib\v1.3.1\d676b73b676c41cdae37b37fbf6c9cbd\include]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libflac\1.4.3\be09e6d64f7a4358bdd2f822674ae8b0\include]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\include]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libogg\v1.3.4\ebbae9da0a6f4e9196c4c23e78abd71f\include]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\o\openal-soft\1.23.1\9307f76021bb47a38f8031ec49a9fb02\include]]
+        },
+        linkdirs = {
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\f\freetype\2.13.1\3c035c48b39a4f20b08f13a452278f99\lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\z\zlib\v1.3.1\d676b73b676c41cdae37b37fbf6c9cbd\lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libflac\1.4.3\be09e6d64f7a4358bdd2f822674ae8b0\lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libogg\v1.3.4\ebbae9da0a6f4e9196c4c23e78abd71f\lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\o\openal-soft\1.23.1\9307f76021bb47a38f8031ec49a9fb02\lib]]
+        },
+        libfiles = {
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-graphics-s.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-window-s.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-audio-s.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-network-s.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-system-s.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-main.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\f\freetype\2.13.1\3c035c48b39a4f20b08f13a452278f99\lib\freetype.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\z\zlib\v1.3.1\d676b73b676c41cdae37b37fbf6c9cbd\lib\zlib.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libflac\1.4.3\be09e6d64f7a4358bdd2f822674ae8b0\lib\FLAC.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\lib\vorbisenc.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\lib\vorbisfile.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\lib\vorbis.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libogg\v1.3.4\ebbae9da0a6f4e9196c4c23e78abd71f\lib\ogg.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\o\openal-soft\1.23.1\9307f76021bb47a38f8031ec49a9fb02\lib\OpenAL32.lib]]
+        },
+        installdir = [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74]],
+        links = {
+            "sfml-graphics-s",
+            "sfml-window-s",
+            "sfml-audio-s",
+            "sfml-network-s",
+            "sfml-system-s",
+            "sfml-main",
+            "freetype",
+            "zlib",
+            "FLAC",
+            "vorbisenc",
+            "vorbisfile",
+            "vorbis",
+            "ogg",
+            "OpenAL32"
+        },
+        __components_orderlist = {
+            "graphics",
+            "window",
+            "audio",
+            "network",
+            "system",
+            "main"
+        },
+        static = true,
+        license = "zlib",
+        syslinks = {
+            "opengl32",
+            "gdi32",
+            "advapi32",
+            "user32",
+            "ws2_32",
+            "winmm",
+            "ole32",
+            "shell32",
+            "kernel32"
+        },
+        version = "2.6.0",
+        __enabled = true
+    },
     lua = {
-        version = "v5.4.6",
         envs = {
             PATH = {
                 [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\bin]],
                 [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\bin]]
             }
         },
-        static = true,
         sysincludedirs = [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\include\lua]],
-        installdir = [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb]],
-        __enabled = true,
-        linkdirs = [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\lib]],
         libfiles = [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\lib\lua.lib]],
+        installdir = [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb]],
+        links = "lua",
+        linkdirs = [[C:\Users\Clean\AppData\Local\.xmake\packages\l\lua\v5.4.6\f7a1b6e07e99413691d173f686cd85cb\lib]],
+        version = "v5.4.6",
+        static = true,
         __requirestr = "lua",
-        links = "lua"
+        __enabled = true
+    },
+    ["imgui-sfml"] = {
+        envs = {
+            PATH = {
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui-sfml\v2.5\dedace1f497b40d2b01c3bb13aaac9d0\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\c\cmake\3.28.3\1f4b73d574724faaad4b9db019f6e0e8\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui\v1.80\a6aed58394e045f29a5fc1549ef92c74\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\o\opengl\latest\b1caf5aecf3447d1bfaf66081135de32\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\p\pkgconf\2.0.3\be5c11cb1b754512913eca4b14a1fb60\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\z\zlib\v1.3.1\d676b73b676c41cdae37b37fbf6c9cbd\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\f\freetype\2.13.1\3c035c48b39a4f20b08f13a452278f99\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libogg\v1.3.4\ebbae9da0a6f4e9196c4c23e78abd71f\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libflac\1.4.3\be09e6d64f7a4358bdd2f822674ae8b0\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\o\openal-soft\1.23.1\9307f76021bb47a38f8031ec49a9fb02\bin]],
+                [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\bin]]
+            }
+        },
+        static = true,
+        defines = {
+            "SFML_STATIC",
+            "FLAC__NO_DLL",
+            "AL_LIBTYPE_STATIC"
+        },
+        libfiles = {
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui-sfml\v2.5\dedace1f497b40d2b01c3bb13aaac9d0\lib\ImGui-SFML.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui\v1.80\a6aed58394e045f29a5fc1549ef92c74\lib\imgui.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-graphics-s.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-window-s.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-audio-s.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-network-s.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-system-s.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib\sfml-main.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\f\freetype\2.13.1\3c035c48b39a4f20b08f13a452278f99\lib\freetype.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\z\zlib\v1.3.1\d676b73b676c41cdae37b37fbf6c9cbd\lib\zlib.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libflac\1.4.3\be09e6d64f7a4358bdd2f822674ae8b0\lib\FLAC.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\lib\vorbisenc.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\lib\vorbisfile.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\lib\vorbis.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libogg\v1.3.4\ebbae9da0a6f4e9196c4c23e78abd71f\lib\ogg.lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\o\openal-soft\1.23.1\9307f76021bb47a38f8031ec49a9fb02\lib\OpenAL32.lib]]
+        },
+        installdir = [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui-sfml\v2.5\dedace1f497b40d2b01c3bb13aaac9d0]],
+        version = "v2.5",
+        syslinks = {
+            "imm32",
+            "opengl32",
+            "gdi32",
+            "advapi32",
+            "user32",
+            "ws2_32",
+            "winmm",
+            "ole32",
+            "shell32",
+            "kernel32"
+        },
+        sysincludedirs = {
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui-sfml\v2.5\dedace1f497b40d2b01c3bb13aaac9d0\include]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui\v1.80\a6aed58394e045f29a5fc1549ef92c74\include]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui\v1.80\a6aed58394e045f29a5fc1549ef92c74\include\imgui]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui\v1.80\a6aed58394e045f29a5fc1549ef92c74\include\backends]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui\v1.80\a6aed58394e045f29a5fc1549ef92c74\include\misc\cpp]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\include]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\f\freetype\2.13.1\3c035c48b39a4f20b08f13a452278f99\include\freetype2]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\z\zlib\v1.3.1\d676b73b676c41cdae37b37fbf6c9cbd\include]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libflac\1.4.3\be09e6d64f7a4358bdd2f822674ae8b0\include]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\include]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libogg\v1.3.4\ebbae9da0a6f4e9196c4c23e78abd71f\include]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\o\openal-soft\1.23.1\9307f76021bb47a38f8031ec49a9fb02\include]]
+        },
+        links = {
+            "ImGui-SFML",
+            "imgui",
+            "opengl32",
+            "sfml-graphics-s",
+            "sfml-window-s",
+            "sfml-audio-s",
+            "sfml-network-s",
+            "sfml-system-s",
+            "sfml-main",
+            "freetype",
+            "zlib",
+            "FLAC",
+            "vorbisenc",
+            "vorbisfile",
+            "vorbis",
+            "ogg",
+            "OpenAL32"
+        },
+        linkdirs = {
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui-sfml\v2.5\dedace1f497b40d2b01c3bb13aaac9d0\lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\i\imgui\v1.80\a6aed58394e045f29a5fc1549ef92c74\lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\s\sfml\2.6.0\c464057346eb4c489f0bb90afe098f74\lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\f\freetype\2.13.1\3c035c48b39a4f20b08f13a452278f99\lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\z\zlib\v1.3.1\d676b73b676c41cdae37b37fbf6c9cbd\lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libflac\1.4.3\be09e6d64f7a4358bdd2f822674ae8b0\lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libvorbis\1.3.7\8a3f7ff1f8c04961a51fa660cbc0c9ab\lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\l\libogg\v1.3.4\ebbae9da0a6f4e9196c4c23e78abd71f\lib]],
+            [[C:\Users\Clean\AppData\Local\.xmake\packages\o\openal-soft\1.23.1\9307f76021bb47a38f8031ec49a9fb02\lib]]
+        },
+        __requirestr = "imgui-sfml",
+        __enabled = true
     }
 }

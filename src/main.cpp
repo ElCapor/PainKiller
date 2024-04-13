@@ -1,9 +1,10 @@
 #include <iostream>
 
-#include <LuaVM/LuaVM.hpp>
+#include <App/LuaApp.hpp>
 
 int main()
 {
-    
+    LuaApp luaApp;
+    luaApp.run();
     return 0;
 }

@@ -9,6 +9,6 @@ class LuaVM : public Singleton<LuaVM>
 public:
     LuaVM();
     ~LuaVM();
-}
+};
 
 #endif
